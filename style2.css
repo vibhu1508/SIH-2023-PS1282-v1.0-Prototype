@@ -1,0 +1,259 @@
+/* Don't forget to add font family */
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html:focus-within {
+    scroll-behavior: smooth !important;
+}
+
+
+
+
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+
+
+
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+
+
+
+/* Navigation bar:Logo and Image */
+#logo {
+    margin:0px 5px;
+}
+
+#logo img {
+    height: 90px;
+    margin: 0px 0px;
+}
+
+
+
+
+/* Navigation bar:List styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Mooli', sans-serif;
+}
+
+#navbar img{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius:20px;
+}
+
+#navbar img:hover{
+    border: 5px solid aqua;
+    transition: background-color 0.5s ease-in 0s;
+}
+
+#navbar ul li {
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: black;
+    display: block;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: overline;
+    transition: all 0.5s ease-out 0s;
+}
+
+#navbar ul li a:active {
+    color: grey;
+}
+
+
+
+
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 75px;
+    height: 470px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('img/bg2.jpg') no-repeat center center/cover;
+    filter: grayscale(20%);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+#home h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Croissant One', cursive;
+}
+
+#home p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+
+/* Services */
+#services-container h1{
+    font-family: 'Farro', sans-serif;
+}
+#services {
+    display: flex;
+    position: relative;
+    top: 500px;
+    margin: -40px 20px;
+}
+
+#services .box {
+    filter: grayscale(50%);
+    border: 2px solid rgb(63, 61, 61);
+    padding: 13px;
+    margin: 50px 14px;
+    border-radius: 44px;
+    background-color: #d9cfcf;
+}
+#services .box:hover{
+    filter: grayscale(0%);
+    background-color: #969292;
+    transform: scale(1.05);
+}
+
+#services .box img {
+    height: 100px;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+
+#services .box p {
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+
+
+/* Contact Us */
+#contact-us {
+    position: relative;
+    top: 700px;
+    font-size: 0.7rem;
+    border-top: 2px solid black;
+    border-bottom:2px solid black;
+    background-color: #d9cfcf;
+    margin: 5px 0px;
+    padding: 65px 50px;
+    text-align: center;
+}
+
+
+
+
+
+/* footer */
+footer {
+    position: relative;
+    top: 800px;
+    background: black;
+    color: grey;
+    padding: 22px 10px;
+    margin-top:50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+
+/* Utility classes */
+.h-primary {
+    font-size: 3rem;
+    padding: 30px 0px;
+    /* font-family: 'Tenor Sans', sans-serif; */
+    align-items: center;
+    text-align: center;
+}
+.h-secondary {
+    font-size: 1.75rem;
+    padding: 10px;
+    font-family: 'Farro', sans-serif;
+}
+.h-secondary:hover{
+    text-decoration: underline;
+}
+.h-tertiary {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Farro', sans-serif;
+}
+.h-fourth {
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.space {
+    padding: 150px;
+}
+.serviceheader{
+    position: relative;
+    top: 600px;
+}
+.center {
+    text-align: center;
+}

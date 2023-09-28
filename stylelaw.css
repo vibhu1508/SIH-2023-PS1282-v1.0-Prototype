@@ -1,0 +1,101 @@
+
+.request {
+    opacity: 1; 
+    transition: opacity 0.5s ease-out; 
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header{
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0px;
+    text-decoration: underline;
+    font-family: 'croissant One', sans-serif;
+}
+.header{
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    padding: 25px 0px;
+    font-family: 'croissant One', sans-serif;
+}
+.sub-header{
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px ;
+    font-family: 'croissant One', sans-serif;
+}
+
+
+.request {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 20px; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.request-details {
+    flex-grow: 1;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.request-details h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.subtext {
+    font-size: 14px; 
+    color: #777; 
+}
+
+.request-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.accept-button, .reject-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.accept-button:hover {
+    background-color: #009726;
+}
+
+.reject-button:hover {
+    background-color: #dc3545; 
+}
+
+/* footer */
+footer {
+    position: relative;
+    top: 800px;
+    background: black;
+    color: grey;
+    padding: 22px 10px;
+    margin-top:50px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
